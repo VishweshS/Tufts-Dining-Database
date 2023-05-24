@@ -1,0 +1,642 @@
+1. ADDING DATA TO THE TABLES
+
+I am first populating all the look-up tables. Below is the SQL query for adding data to the country_codes table. This is the list of all the possible 3-letter countries codes.
+
+INSERT INTO project.country_codes (country_code) (
+VALUES
+	('AFG'),
+	('ALA'),
+	('ALB'),
+	('DZA'),
+	('ASM'),
+	('AND'),
+	('AGO'),
+	('AIA'),
+	('ATA'),
+	('ATG'),
+	('ARG'),
+	('ARM'),
+	('ABW'),
+	('AUS'),
+	('AUT'),
+	('AZE'),
+	('BHS'),
+	('BHR'),
+	('BGD'),
+	('BRB'),
+	('BLR'),
+	('BEL'),
+	('BLZ'),
+	('BEN'),
+	('BMU'),
+	('BTN'),
+	('BOL'),
+	('BES'),
+	('BIH'),
+	('BWA'),
+	('BVT'),
+	('BRA'),
+	('IOT'),
+	('BRN'),
+	('BGR'),
+	('BFA'),
+	('BDI'),
+	('KHM'),
+	('CMR'),
+	('CAN'),
+	('CPV'),
+	('CYM'),
+	('CAF'),
+	('TCD'),
+	('CHL'),
+	('CHN'),
+	('CXR'),
+	('CCK'),
+	('COL'),
+	('COM'),
+	('COG'),
+	('COD'),
+	('COK'),
+	('CRI'),
+	('CIV'),
+	('HRV'),
+	('CUB'),
+	('CUW'),
+	('CYP'),
+	('CZE'),
+	('DNK'),
+	('DJI'),
+	('DMA'),
+	('DOM'),
+	('ECU'),
+	('EGY'),
+	('SLV'),
+	('GNQ'),
+	('ERI'),
+	('EST'),
+	('ETH'),
+	('FLK'),
+	('FRO'),
+	('FJI'),
+	('FIN'),
+	('FRA'),
+	('GUF'),
+	('PYF'),
+	('ATF'),
+	('GAB'),
+	('GMB'),
+	('GEO'),
+	('DEU'),
+	('GHA'),
+	('GIB'),
+	('GRC'),
+	('GRL'),
+	('GRD'),
+	('GLP'),
+	('GUM'),
+	('GTM'),
+	('GGY'),
+	('GIN'),
+	('GNB'),
+	('GUY'),
+	('HTI'),
+	('HMD'),
+	('VAT'),
+	('HND'),
+	('HKG'),
+	('HUN'),
+	('ISL'),
+	('IND'),
+	('IDN'),
+	('IRN'),
+	('IRQ'),
+	('IRL'),
+	('IMN'),
+	('ISR'),
+	('ITA'),
+	('JAM'),
+	('JPN'),
+	('JEY'),
+	('JOR'),
+	('KAZ'),
+	('KEN'),
+	('KIR'),
+	('PRK'),
+	('KOR'),
+	('XKX'),
+	('KWT'),
+	('KGZ'),
+	('LAO'),
+	('LVA'),
+	('LBN'),
+	('LSO'),
+	('LBR'),
+	('LBY'),
+	('LIE'),
+	('LTU'),
+	('LUX'),
+	('MAC'),
+	('MKD'),
+	('MDG'),
+	('MWI'),
+	('MYS'),
+	('MDV'),
+	('MLI'),
+	('MLT'),
+	('MHL'),
+	('MTQ'),
+	('MRT'),
+	('MUS'),
+	('MYT'),
+	('MEX'),
+	('FSM'),
+	('MDA'),
+	('MCO'),
+	('MNG'),
+	('MNE'),
+	('MSR'),
+	('MAR'),
+	('MOZ'),
+	('MMR'),
+	('NAM'),
+	('NRU'),
+	('NPL'),
+	('NLD'),
+	('NCL'),
+	('NZL'),
+	('NIC'),
+	('NER'),
+	('NGA'),
+	('NIU'),
+	('NFK'),
+	('MNP'),
+	('NOR'),
+	('OMN'),
+	('PAK'),
+	('PLW'),
+	('PSE'),
+	('PAN'),
+	('PNG'),
+	('PRY'),
+	('PER'),
+	('PHL'),
+	('PCN'),
+	('POL'),
+	('PRT'),
+	('PRI'),
+	('QAT'),
+	('SRB'),
+	('REU'),
+	('ROU'),
+	('RUS'),
+	('RWA'),
+	('BLM'),
+	('SHN'),
+	('KNA'),
+	('LCA'),
+	('MAF'),
+	('SPM'),
+	('VCT'),
+	('WSM'),
+	('SMR'),
+	('STP'),
+	('SAU'),
+	('SEN'),
+	('SYC'),
+	('SLE'),
+	('SGP'),
+	('SXM'),
+	('SVK'),
+	('SVN'),
+	('SLB'),
+	('SOM'),
+	('ZAF'),
+	('SGS'),
+	('SSD'),
+	('ESP'),
+	('LKA'),
+	('SDN'),
+	('SUR'),
+	('SJM'),
+	('SWZ'),
+	('SWE'),
+	('CHE'),
+	('SYR'),
+	('TWN'),
+	('TJK'),
+	('TZA'),
+	('THA'),
+	('TLS'),
+	('TGO'),
+	('TKL'),
+	('TON'),
+	('TTO'),
+	('TUN'),
+	('TUR'),
+	('XTX'),
+	('TKM'),
+	('TCA'),
+	('TUV'),
+	('UGA'),
+	('UKR'),
+	('ARE'),
+	('GBR'),
+	('USA'),
+	('UMI'),
+	('URY'),
+	('UZB'),
+	('VUT'),
+	('VEN'),
+	('VNM'),
+	('VGB'),
+	('VIR'),
+	('WLF'),
+	('ESH'),
+	('YEM'),
+	('ZMB'),
+	('ZWE')
+);
+SELECT * FROM project.country_codes;
+
+Then, I am adding data to the designations table, which is another look-up table containing all the possible designations at Tufts Dining.
+
+INSERT INTO project.designations (designation) (
+VALUES
+	('Student'),
+	('Student Supervisor'),
+	('Trainee'),
+	('Server'),
+	('Prep Cook'),
+	('Assistant Manager'),
+	('General Manager')
+);
+SELECT * FROM project.designations;
+
+Now that all the look-up tables are populated, I will add data to the main tables. First, I add data to the employees table. This is the table which contains all the details associated with the employees who have worked in the past or are currently working for Tufts Dining. 
+
+INSERT INTO project.employees (employee_id, last_name, first_name, date_birth, gender, citizenship_country, ssn, mailing_address, phone, email) (
+VALUES
+      -- While executing this query, add some data for each employee id. Here all the data is not shown to protect personal information --
+	(1),
+	(2),
+	(5),
+      (3),
+      (4)
+);
+SELECT * FROM project.employees;
+
+Next, I will add data to the employees_designations table. This table has the designations that each employee have held over the years and the current designaiton. Example explanation: X, with employee_id of 1 was a 'Student' from 2022-09-06 till 2022-12-12. Then, he was promoted to 'Student Supervisor' on 2023-01-18. He currently holds the title of 'Student Supervisor.'
+
+INSERT INTO project.employees_designations (employee_id, time_period, designation) (
+VALUES
+	(1, '[2022-09-06, 2022-12-13)', 'Student'),
+	(1, '[2023-01-18, Infinity)', 'Student Supervisor'),
+	(2, '[2023-01-18, Infinity)', 'Trainee'),
+	(5, '[2020-09-06, 2022-10-20)', 'Server'),
+	(5, '[2022-10-20, Infinity)', 'Prep Cook'),
+	(3, '[2020-09-06, Infinity)', 'Prep Cook'),
+	(4, '[2020-09-06, 2021-09-06)', 'Assistant Manager'),
+	(4, '[2021-09-06, Infinity)', 'General Manager')
+);
+SELECT * FROM project.employees_designations;
+
+Next, I will add data to the pay_rates table. This table contains information about the hourly pay rates for each designation over the years and the current 
+pay rate. There are two pay rates - one for the regular shifts and another for night or special shifts. Example explanation: 'Server' as paid $25.00 as normal rate and $26.00 as speical rate from 2020-09-06 till 2022-09-05. Then from 2022-09-06 till today, both the rates were increased  by $1.
+
+INSERT INTO project.pay_rates (designation, time_period, normal_hourly_rate, special_hourly_rate) (
+VALUES
+	('Student', '[2020-09-06, Infinity)', 15.00, 16.00),
+	('Student Supervisor', '[2020-09-06, Infinity)', 16.00, 17.00),
+	('Trainee', '[2020-09-06, Infinity)', 20.00, 21.00),
+	('Server', '[2020-09-06, 2022-09-06)', 25.00, 26.00),
+	('Server', '[2022-09-06, Infinity)', 27.00, 28.00),
+	('Prep Cook', '[2020-09-06, Infinity)', 30.00, 31.00),
+	('Assistant Manager', '[2020-09-06, Infinity)', 35.00, 36.00),
+	('General Manager', '[2020-09-06, Infinity)', 40.00, 41.00)
+);
+SELECT * FROM project.pay_rates;
+
+Next, I will add to the schedules table. This table contains the schedule for each employee for the past, present and into the future. Example Explanation: X with employee_id 1 had a schedule of working on every Tuesday starting from 2022-09-06 till 2022-12-12. The time of the shift was from 11:30 to 14:30. He was responsible for 'Toss' for these shifts. Then, from 2023-01-18 till 2023-05-01 he works on every Wednesday. The time of the shift is from 8:00 to 11:00. He is responsible for 'Prep/Stock' for these shifts. 
+
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(1,   
+	 tstzrange(
+		 generate_series(
+			 '2022-09-06 11:30'::timestamptz,
+			 '2022-12-12 11:30'::timestamptz,
+			 '1 week'::interval),
+		 generate_series(
+			 '2022-09-06 14:30'::timestamptz,
+			 '2022-12-12 14:30'::timestamptz,
+			 '1 week'::interval),
+		 '[)'), 
+	'Toss')
+);
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(1,   
+	 tstzrange(
+		 generate_series(
+			 '2023-01-18 08:00'::timestamptz,
+			 '2023-05-01 08:00'::timestamptz,
+			 '1 week'::interval),
+		 generate_series(
+			 '2023-01-18 11:00'::timestamptz,
+			 '2023-05-01 11:00'::timestamptz,
+			 '1 week'::interval),
+		 '[)'), 
+	'Prep/Stock')
+);
+
+Similarly, below all queries adds the schedule for all the other employees.
+
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(2,   
+	 tstzrange(
+		 generate_series(
+			 '2023-01-18 08:00'::timestamptz,
+			 '2023-05-01 08:00'::timestamptz,
+			 '1 day'::interval),
+		 generate_series(
+			 '2023-01-18 16:00'::timestamptz,
+			 '2023-05-01 16:00'::timestamptz,
+			 '1 day'::interval),
+		 '[)'), 
+	'Toss')
+);
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(5,   
+	 tstzrange(
+		 generate_series(
+			 '2020-09-06 11:00'::timestamptz,
+			 '2022-10-20 11:00'::timestamptz,
+			 '1 day'::interval),
+		 generate_series(
+			 '2020-09-06 19:00'::timestamptz,
+			 '2022-10-20 19:00'::timestamptz,
+			 '1 day'::interval),
+		 '[)'), 
+	'Toss')
+);
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(5,   
+	 tstzrange(
+		 generate_series(
+			 '2022-10-21 08:00'::timestamptz,
+			 '2023-05-01 08:00'::timestamptz,
+			 '1 day'::interval),
+		 generate_series(
+			 '2022-10-21 16:00'::timestamptz,
+			 '2023-05-01 16:00'::timestamptz,
+			 '1 day'::interval),
+		 '[)'), 
+	'Cook')
+);
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(3,   
+	 tstzrange(
+		 generate_series(
+			 '2020-09-06 14:00'::timestamptz,
+			 '2023-05-01 14:00'::timestamptz,
+			 '1 day'::interval),
+		 generate_series(
+			 '2020-09-06 22:00'::timestamptz,
+			 '2023-05-01 22:00'::timestamptz,
+			 '1 day'::interval),
+		 '[)'), 
+	'Cook')
+);
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(4,   
+	 tstzrange(
+		 generate_series(
+			 '2020-09-06 09:00'::timestamptz,
+			 '2021-09-06 09:00'::timestamptz,
+			 '1 day'::interval),
+		 generate_series(
+			 '2020-09-06 17:00'::timestamptz,
+			 '2021-09-06 17:00'::timestamptz,
+			 '1 day'::interval),
+		 '[)'), 
+	'Manage Student Staff')
+);
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(4,   
+	 tstzrange(
+		 generate_series(
+			 '2021-09-07 09:00'::timestamptz,
+			 '2023-05-01 09:00'::timestamptz,
+			 '1 day'::interval),
+		 generate_series(
+			 '2021-09-07 17:00'::timestamptz,
+			 '2023-05-01 17:00'::timestamptz,
+			 '1 day'::interval),
+		 '[)'), 
+	'Manage Perm. Staff')
+);
+SELECT * FROM project.schedules; 
+
+2. SOME UPDATES AND DELETES THAT CAN BE FREQUENTLY USED
+
+(i) X, with employee_id 1 on 2023-01-25, instead of working from 08:00 till 11:00, he only worked from 09:00 till 11:00.
+
+UPDATE project.schedules SET slot = tstzrange('2023-01-25 09:00', '2023-01-25 11:00')
+       WHERE employee_id = 1 AND slot = tstzrange('2023-01-25 08:00', '2023-01-25 11:00');
+SELECT * FROM project.schedules; 
+
+(ii) Tufts Dining administration decides to rename the designation 'General Manager' to 'Area Manager.' They do so that each dining location on the Tufts campus has an area manager who is responsible for managing all the permanent employees. In the current database, Y, with employee_id 4 has the title of 'General Manager' and it has to be changed to 'Area Manager.' To do so, I just have to change the 'designations' look-up table and the change will be cascaded to the following two tables: 'employees_designations' and 'pay_rates.'
+
+UPDATE project.designations SET designation = 'Area Manager'
+       WHERE designation = 'General Manager';
+SELECT * FROM project.designations;
+SELECT * FROM project.employees_designations;
+SELECT * FROM project.pay_rates;
+
+(iii) Y, with employee_id 4 leaves the job effective from 2022-09-07 and has 2022-09-06 as the last working day. 
+
+DELETE FROM project.schedules
+       WHERE employee_id = 4 AND date(lower(slot)) >= '2022-09-07'::date;
+SELECT * FROM project.schedules;
+
+This deletion operation will also need an updation operation. In the employees_designation table, the end time period has to be changed from Infinity to 2022-09-06 for Y.
+
+UPDATE project.employees_designations SET time_period = daterange('2021-09-06', '2022-09-07')
+       WHERE employee_id = 4 AND time_period = daterange('2021-09-06', 'Infinity');
+SELECT * FROM project.employees_designations; 
+
+3. SOME IMPORTANT QUERIES THAT CAN BE FREQUENTLY USED 
+
+(i) On a particular day, who are the employees working, their schedule and responsibility. This will enable the user of this database to check if there are any open slots for which coverage is neeeded. The list is ordered in ascending order by the starting time. Below, I am checking for 2022-09-06. 
+
+SELECT project.employees.first_name || ' ' || project.employees.last_name AS "name",
+       project.schedules.slot,
+       project.schedules.duty
+FROM project.schedules INNER JOIN
+     project.employees ON project.schedules.employee_id = project.employees.employee_id
+WHERE date(LOWER(project.schedules.slot)) = '2022-09-06'::date
+ORDER BY LOWER(project.schedules.slot);
+
+(ii) To extract the total number of hours worked in a week by the employees who do not have the US as their country of citizenship. This is an important information to be tracked since immigrants have restrictions on this number based on their visa type. Below, I am checking for the week 2023-01-22 - 2023-01-28.
+
+SELECT project.employees.employee_id,
+       project.employees.first_name || ' ' || project.employees.last_name AS "name",
+	 project.employees.citizenship_country,
+       SUM(UPPER(project.schedules.slot) - LOWER(project.schedules.slot)) AS "total time worked"
+FROM project.schedules INNER JOIN
+     project.employees ON project.schedules.employee_id = project.employees.employee_id
+WHERE project.employees.citizenship_country != 'USA'
+      AND date(LOWER(project.schedules.slot)) >= '2023-01-22'::date 
+      AND date(LOWER(project.schedules.slot)) <= '2023-01-28'::date
+GROUP BY project.employees.employee_id;
+
+
+(iii) Extracting the total compensation of all the employees in the year 2022. This information will be helpful to prepare the W-2 forms.
+
+-- For slots which are completely in the time period starting from 22:00 till 07:59, the employee will get 
+-- special hourly rate. For all the other slots, the employee will get normal hourly rate.
+WITH pay_table AS ( 
+		SELECT project.schedules.employee_id,
+			   project.employees_designations.designation,
+			   project.schedules.slot,
+			   ((EXTRACT(epoch FROM (upper(project.schedules.slot) - lower(project.schedules.slot)))/3600)::numeric(4,2) *
+			   CASE 
+				   WHEN EXTRACT(hour FROM lower(project.schedules.slot)) IN (22,23,00,01,02,03,04,05,06,07) AND
+						EXTRACT(hour FROM upper(project.schedules.slot)) IN (22,23,00,01,02,03,04,05,06,07)
+				   THEN project.pay_rates.special_hourly_rate
+				   ELSE project.pay_rates.normal_hourly_rate
+			   END)::numeric(6,2) AS "compensation"
+		FROM project.schedules INNER JOIN
+			 project.employees_designations ON 
+					 project.schedules.employee_id = project.employees_designations.employee_id AND
+					 project.employees_designations.time_period @> date(LOWER(project.schedules.slot)) INNER JOIN
+			 project.pay_rates ON
+					 project.employees_designations.designation = project.pay_rates.designation AND
+					 project.pay_rates.time_period @> date(LOWER(project.schedules.slot))
+)
+
+SELECT project.employees.employee_id,
+       project.employees.first_name || ' ' || project.employees.last_name AS "name",
+	   SUM(compensation) AS "total compensation"
+FROM pay_table INNER JOIN
+     project.employees ON pay_table.employee_id = project.employees.employee_id
+ WHERE date(lower(pay_table.slot)) >= '2022-01-01'::date 
+       AND date(lower(pay_table.slot)) <= '2022-12-31'::date
+GROUP BY project.employees.employee_id;  
+
+(iv) A query that for each date from 2020-9-6 to 2023-5-1, finding the YTD total hours by employee.
+
+SELECT project.employees.employee_id,
+       project.employees.first_name || ' ' || project.employees.last_name AS "name",
+	   date(LOWER(project.schedules.slot)) AS "date",
+	   (SUM(EXTRACT(epoch FROM UPPER(project.schedules.slot) - LOWER(project.schedules.slot)))
+	   OVER (PARTITION BY project.schedules.employee_id, EXTRACT(year FROM date(LOWER(project.schedules.slot)))
+		     ORDER BY project.schedules.employee_id, date(LOWER(project.schedules.slot)))/3600.00)::numeric(6,2) AS "total hours"
+FROM project.schedules INNER JOIN
+     project.employees ON project.schedules.employee_id = project.employees.employee_id;
+
+(v) A query that for each date from 2020-9-6 to 2023-5-1, finding the YTD total hours by duty.
+
+SELECT project.schedules.duty,
+	       date(LOWER(project.schedules.slot)) AS "date",
+           (SUM(EXTRACT(epoch FROM UPPER(project.schedules.slot) - LOWER(project.schedules.slot)))
+	       OVER (PARTITION BY project.schedules.duty, EXTRACT(year FROM date(LOWER(project.schedules.slot))) 
+				 ORDER BY date(LOWER(project.schedules.slot)))/3600.00)::numeric(6,2) AS "hours"
+FROM project.schedules;
+
+(vi) Adding some records where an international student employee exceeded the weekly maximum and finding the exact slots when the violation took place.
+
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(1,   
+	 tstzrange(
+		 generate_series(
+			 '2023-01-19 08:00'::timestamptz,
+			 '2023-05-01 08:00'::timestamptz,
+			 '1 week'::interval),
+		 generate_series(
+			 '2023-01-19 13:00'::timestamptz,
+			 '2023-05-01 13:00'::timestamptz,
+			 '1 week'::interval),
+		 '[)'), 
+	'Prep/Stock')
+);
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(1,   
+	 tstzrange(
+		 generate_series(
+			 '2023-01-20 08:00'::timestamptz,
+			 '2023-05-01 08:00'::timestamptz,
+			 '1 week'::interval),
+		 generate_series(
+			 '2023-01-20 13:00'::timestamptz,
+			 '2023-05-01 13:00'::timestamptz,
+			 '1 week'::interval),
+		 '[)'), 
+	'Cashier')
+);
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(1,   
+	 tstzrange(
+		 generate_series(
+			 '2023-01-21 08:00'::timestamptz,
+			 '2023-05-01 08:00'::timestamptz,
+			 '1 week'::interval),
+		 generate_series(
+			 '2023-01-21 13:00'::timestamptz,
+			 '2023-05-01 13:00'::timestamptz,
+			 '1 week'::interval),
+		 '[)'), 
+	'Cashier')
+);
+INSERT INTO project.schedules (employee_id, slot, duty) (
+VALUES
+	(1,   
+	 tstzrange(
+		 generate_series(
+			 '2023-01-22 08:00'::timestamptz,
+			 '2023-05-01 08:00'::timestamptz,
+			 '1 week'::interval),
+		 generate_series(
+			 '2023-01-22 12:00'::timestamptz,
+			 '2023-05-01 12:00'::timestamptz,
+			 '1 week'::interval),
+		 '[)'), 
+	'Cashier')
+);
+
+DELETE FROM project.schedules
+       WHERE employee_id = 1 AND date(lower(slot)) = '2023-04-30'::date;
+SELECT * FROM project.schedules;
+
+WITH weekly_cummulative_time AS (
+	SELECT project.schedules.employee_id,
+	       project.schedules.slot, 
+		   SUM(EXTRACT(epoch FROM UPPER(project.schedules.slot) - LOWER(project.schedules.slot)))
+	       OVER (
+			   PARTITION BY project.schedules.employee_id, EXTRACT(week FROM date(LOWER(project.schedules.slot))) 
+			   ORDER BY date(LOWER(project.schedules.slot))) 
+	       AS seconds_accumulated
+	FROM project.schedules INNER JOIN
+		 project.employees_designations ON 
+						 project.schedules.employee_id = project.employees_designations.employee_id AND
+						 project.employees_designations.time_period @> date(LOWER(project.schedules.slot)) INNER JOIN
+		 project.employees ON 
+						 project.schedules.employee_id = project.employees.employee_id
+	WHERE project.employees_designations.designation IN ('Student', 'Student Supervisor') AND
+	      project.employees.citizenship_country != 'USA'
+)
+
+SELECT employee_id, 
+       slot,
+	   (seconds_accumulated/3600.00)::numeric(6,2) AS hours_accumulated
+FROM weekly_cummulative_time
+WHERE (seconds_accumulated/3600.00)::numeric(6,2) > 20.00;
