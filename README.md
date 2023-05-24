@@ -1,4 +1,4 @@
-Project done as part of the course DATA202, Spring 2023, Tufts University.
+Project done as part of the course DATA202 (Database Design and SQL), Spring 2023, Tufts University.
 
 Abstract of the project: 
 <br>
