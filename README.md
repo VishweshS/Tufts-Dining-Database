@@ -2,7 +2,7 @@ Project done as part of the course DATA202 (Database Design and SQL), Spring 202
 
 Abstract of the project: 
 <br>
-I designed a database system to manage the payroll process of the employees employed at Tufts Dining. The project included the creation of the database and also the development of a user guide to manage the database. The user guide contains queries to add data and scenarios for updating, deletion, and viewing the data in different forms. 
+I designed a database system to manage the payroll process of the employees employed at Tufts Dining. The project included the creation of the database and also the development of a user guide to manage the database. The user guide contains queries to add data and the most frequent scenarios for updating, deleting, and viewing the data in different forms.
 
 Guide to navigating the files:
 
